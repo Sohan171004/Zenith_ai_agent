@@ -2,7 +2,7 @@
 import { GoogleGenAI, Chat } from "@google/genai";
 
 // IMPORTANT: Do NOT configure API Key here. It will be provided by the environment.
-const API_KEY = process.env.API_KEY;
+const API_KEY =  import.meta.env.VITE_GEMINI_API_KEY;
 
 if (!API_KEY) {
     // In a real app, you'd have a more robust way to handle this,
